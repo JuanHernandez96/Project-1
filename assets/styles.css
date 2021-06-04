@@ -1,3 +1,35 @@
-header h1 {
-    
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*----variables*/
+
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #cccacb;
+  --clr-dark: #262425;
+  --clr-accent: #00b3ad;
+  --clr-sky: #bffffd;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  /*--fs-h3: 11.25rem;*/
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+body {
+  background: var(--clr-sky);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
 }
