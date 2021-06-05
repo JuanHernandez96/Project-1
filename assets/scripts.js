@@ -11,3 +11,7 @@ navLinks.forEach((link) => {
     document.body.classList.remove("nav-open");
   });
 });
+
+
+
+apiKey= "FBrjvWBdiNTgthvFmtSElrrE5KLkDN9um8KrVQKxKkDCIJJsjV"
