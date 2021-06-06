@@ -113,8 +113,9 @@ body {
 }
 
 .startBtn:hover {
-  color: transparent;
+  color: aqua;
 }
+
 h1 {
   padding-top: 400px;
   color: white;
