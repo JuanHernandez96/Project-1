@@ -32,7 +32,63 @@ nav a {
 a.active,
 a:hover {
   border: 1px solid white;
-  transition: ;
+  transition: 0.5s;
+}
+
+div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+nav #icon {
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 40px;
+  display: none;
+}
+
+@media (max-width: 1048px) {
+  nav ul {
+    margin-right: 20px;
+  }
+  nav a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 909px) {
+  nav #icon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2f3640;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  a.active,
+  a:hover {
+    border: none;
+    color: #3498db;
+  }
+  nav ul.show {
+    left: 0;
+  }
 }
 
 body {
@@ -54,6 +110,10 @@ body {
   font-size: 10px;
   color: white;
   background-image: linear-gradient(rgb(111, 0, 255), rgb(0, 47, 255));
+}
+
+.startBtn:hover {
+  color: transparent;
 }
 h1 {
   padding-top: 400px;
