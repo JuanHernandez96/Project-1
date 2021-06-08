@@ -1,13 +1,7 @@
-//for the menu//
-const navToggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelectorAll(".nav-link");
+//for the menu icon//
 
-navToggle.addEventListener("click", () => {
-  document.body.classList.toggle("nav-open");
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    document.body.classList.remove("nav-open");
+$(document).ready(function () {
+  $("#icon").click(function () {
+    $("ul").toggleClass("show");
   });
 });
