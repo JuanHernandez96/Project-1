@@ -35,6 +35,9 @@ a:hover {
   transition: 0.5s;
 }
 
+#enterbtn {
+  
+}
 div {
   width: 35px;
   height: 5px;
@@ -48,6 +51,9 @@ nav #icon {
   margin-top: 20px;
 
   display: none;
+}
+#enterbtn {
+  height: 50px;
 }
 img {
   margin-left: 5px;
