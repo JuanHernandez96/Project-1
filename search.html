@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
     <nav>
         <label class="logo"></label>
         <ul>
@@ -36,7 +37,7 @@
         </label>
     </nav>
 
-    <section class="search">
+    <section id="search" class="hide">
         <h1>What are you looking for</h1>
         <form>
             <select name="" id="animalType">
@@ -46,12 +47,17 @@
             </select>
 
             <form>
-                <label for="Zipcode">Enter Zip Code</label>
+                <label for="zipcode" class="code">Enter Zip Code</label>
                 <input type="text" id="zipcode">
             </form>
             <button id="enterbtn">Enter</button>
-            <div class="displayResults"></div>
     </section>
+    <section id="displayResults" class="hide">
+        <h1>These are your results :</h1>
+        <!-- <button class="favBtn">Favorite</button> -->
+
+    </section>
+
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>

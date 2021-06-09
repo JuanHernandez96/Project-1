@@ -46,10 +46,10 @@ nav #icon {
   float: right;
   cursor: pointer;
   margin-top: 20px;
-  
+
   display: none;
 }
-img{
+img {
   margin-left: 5px;
   height: 300px;
   width: 200px;
@@ -57,8 +57,6 @@ img{
   object-position: center;
   cursor: pointer;
 }
-
-
 
 @media (max-width: 1048px) {
   nav ul {
@@ -71,6 +69,7 @@ img{
 @media (max-width: 909px) {
   nav #icon {
     display: block;
+    margin-right: 40px;
   }
   nav ul {
     position: fixed;
@@ -102,6 +101,7 @@ img{
 
 body {
   background-image: url("https://wallpaperaccess.com/full/266689.jpg");
+
   background-size: cover;
 }
 .opensection {
@@ -112,7 +112,7 @@ body {
   font-size: 20px;
   height: 100vh;
 }
-.startBtn {
+#enterbtn {
   border-radius: 20px;
   padding: 10px;
   width: 100px;
@@ -121,16 +121,25 @@ body {
   background-image: linear-gradient(rgb(111, 0, 255), rgb(0, 47, 255));
 }
 
-.startBtn:hover {
+#enterbtn:hover {
   color: aqua;
+}
+.code {
+  font-size: xx-large;
+  color: aliceblue;
+}
+#animalType {
+  padding: 10px;
+  font-size: xx-large;
 }
 
 h1 {
   padding-top: 400px;
-  color: white;
+  color: gainsboro;
+  font-weight: bold;
 }
 @media (min-width: 600px) {
-  main {
+  body {
     background-image: url("https://wallpaperaccess.com/full/266689.jpg");
     background-size: cover;
   }
@@ -143,23 +152,36 @@ h1 {
     font-size: 50px;
     height: 100vh;
   }
-  .startBtn {
-    border-radius: 20px;
-    padding: 20px;
-    width: 300px;
-    font-size: 30px;
+  #enterbtn {
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 70px;
+    font-size: 35px;
     color: white;
     background-image: linear-gradient(rgb(111, 0, 255), rgb(0, 47, 255));
   }
   h1 {
     padding-top: 200px;
     color: white;
+    font-weight: bold;
   }
 }
-.search {
+#search {
   width: 100vw;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   height: 100vh;
+  color: white;
+}
+
+.btn-primary,
+.zipcode {
+  font-size: larger;
+}
+
+#displayResults {
+  margin-left: 100px;
+  color: aliceblue;
 }

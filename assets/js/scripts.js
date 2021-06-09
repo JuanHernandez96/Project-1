@@ -1,21 +1,21 @@
 //for the menu icon//
-// $(document).ready(function () {
-//   $("#icon").click(function () {
-//     $("ul").toggleClass("show");
-//   });
-// });
+$(document).ready(function () {
+  $("#icon").click(function () {
+    $("ul").toggleClass("show");
+  });
+});
 
-var enterbtn = document.querySelector("#enterbtn")
+//for search
 
+var enterbtn = document.querySelector("#enterbtn");
 
 enterbtn.addEventListener("click", function (event) {
-  event.preventDefault()
+  event.preventDefault();
 
-  var zip = document.querySelector("#zipcode")
-  var animalType = document.querySelector("#animalType")
-  getAnimal(animalType.value, zip.value)
-})
-
+  var zip = document.querySelector("#zipcode");
+  var animalType = document.querySelector("#animalType");
+  getAnimal(animalType.value, zip.value);
+});
 
 function getAnimal(animalType, location) {
   $.ajax({
@@ -54,4 +54,14 @@ function getAnimal(animalType, location) {
     });
 }
 
-
+    $.ajax({
+      method: "GET",
+      url:
+        "https://api.petfinder.com/v2/animals?type=" +
+        animalType +
+        "&location=" +
+        location,
+      headers: { Authorization: "Bearer " + msg.access_token },
+    }).done(function (data) {
+      console.log(data);
+      var displayResults = document.querySelector("#displayResults");
