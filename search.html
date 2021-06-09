@@ -18,7 +18,7 @@
         rel="stylesheet">
     <!---my stylesheet-->
 
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
 
 </head>
@@ -41,19 +41,21 @@
 
     <section class="search">
         <h1>What are you looking for</h1>
-        <div class="d-grid gap-2 col-3 mx-auto">
-            <button class="btn btn-primary" type="button">Dogs</button>
-            <button class="btn btn-primary" type="button">Cats</button>
+        <form>
+            <select name="" id="animalType">
+                <option value="dog">dog</option>
+                <option value="cat">cat</option>
 
-            <label for="zipcode" class="zipcode">Enter Zip Code</label>
-            <input type="text" id="zipcode">
+            </select>
+
+            <form>
+                <label for="Zipcode">Enter Zip Code</label>
+                <input type="text" id="zipcode">
             </form>
-            <button class="enterbtn">Enter</button>
-        </div>
-
+            <button id="enterbtn">Enter</button>
+            <div class="displayResults"></div>
     </section>
-
+    <script src="./assets/js/scripts.js"></script>
 </body>
-<script src="/Project-1/assets/styles.css"></script>
 
 </html>
