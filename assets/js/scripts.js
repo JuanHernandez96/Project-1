@@ -35,7 +35,7 @@ function getAnimal(animalType, location) {
 
         .done(function (data) {
           console.log(data)
-          var displayResults = document.querySelector(".displayResults")
+          var displayResults = document.querySelector("#displayResults")
           var animalsArray = data.animals
                 for (let index = 0; index < animalsArray.length; index++) {
                      if(animalsArray[index].photos[0]){
@@ -54,15 +54,15 @@ function getAnimal(animalType, location) {
     });
 }
 
-    $.ajax({
-      method: "GET",
-      url:
-        "https://api.petfinder.com/v2/animals?type=" +
-        animalType +
-        "&location=" +
-        location,
-      headers: { Authorization: "Bearer " + msg.access_token },
-    }).done(function (data) {
-      console.log(data);
-      var displayResults = document.querySelector("#displayResults")
-    })
+    // $.ajax({
+    //   method: "GET",
+    //   url:
+    //     "https://api.petfinder.com/v2/animals?type=" +
+    //     animalType +
+    //     "&location=" +
+    //     location,
+    //   headers: { Authorization: "Bearer " + msg.access_token },
+    // }).done(function (data) {
+    //   console.log(data);
+    //   var displayResults = document.querySelector("#displayResults")
+    // })
