@@ -153,4 +153,22 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   height: 100vh;
+  color: white;
 }
+
+.btn-primary,
+.zipcode {
+  font-size: larger;
+}
+
+.enterbtn {
+  color: black;
+  font-size: x-large;
+  background-color: turquoise;
+  border-radius: 1rem;
+}
+
+/* .enterbtn:hover,
+.enterbtn:focus {
+  box-shadow: inset 6.5em 0 0 0 turquoise;
+} */
