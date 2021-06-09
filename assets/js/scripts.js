@@ -21,13 +21,38 @@ function getAnimal(animalType, location) {
   $.ajax({
     method: "POST",
     url: "https://api.petfinder.com/v2/oauth2/token",
-    data: {
-      grant_type: "client_credentials",
-      client_id: "91r5U7c01YadVDHmYCPyaE8vMuFKg35qriDBIPa5s0NOFIxnaz",
-      client_secret: "WbfUIeUyx15e8kSqqr74SUq6kDyayTFHtq3kBOgx",
-    },
-  }).done(function (msg) {
-    console.log(msg);
+    data: { grant_type: "client_credentials", client_id: "91r5U7c01YadVDHmYCPyaE8vMuFKg35qriDBIPa5s0NOFIxnaz", client_secret: "WbfUIeUyx15e8kSqqr74SUq6kDyayTFHtq3kBOgx" }
+  })
+    .done(function (msg) {
+      console.log(msg)
+
+
+      $.ajax({
+        method: "GET",
+        url: "https://api.petfinder.com/v2/animals?type=" + animalType   + "&location=" + location,
+        headers: { Authorization: "Bearer " + msg.access_token }
+      })
+
+        .done(function (data) {
+          console.log(data)
+          var displayResults = document.querySelector(".displayResults")
+          var animalsArray = data.animals
+                for (let index = 0; index < animalsArray.length; index++) {
+                     if(animalsArray[index].photos[0]){
+                      displayResults.innerHTML+=`
+                      <h2>${animalsArray[index].name} </h2>
+                      <h4>${animalsArray[index].contact.email}</h4>
+                      <img src="${ animalsArray[index].photos[0].medium}">             
+                      <a><i onclick="save_data()" id="heart" class="fas fa-heart"></i></a>
+                      
+                      `
+                     }
+                    
+                }
+        });
+
+    });
+}
 
     $.ajax({
       method: "GET",
