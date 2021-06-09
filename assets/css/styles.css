@@ -44,12 +44,21 @@ div {
 
 nav #icon {
   float: right;
-  margin-right: 40px;
   cursor: pointer;
   margin-top: 20px;
-  margin-right: 40px;
+  
   display: none;
 }
+img{
+  margin-left: 5px;
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+
 
 @media (max-width: 1048px) {
   nav ul {
