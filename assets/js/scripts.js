@@ -64,4 +64,5 @@ function getAnimal(animalType, location) {
       headers: { Authorization: "Bearer " + msg.access_token },
     }).done(function (data) {
       console.log(data);
-      var displayResults = document.querySelector("#displayResults");
+      var displayResults = document.querySelector("#displayResults")
+    })
