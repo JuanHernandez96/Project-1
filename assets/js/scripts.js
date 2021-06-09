@@ -36,7 +36,7 @@ function getAnimal(animalType, location) {
 
         .done(function (data) {
           console.log(data)
-          var displayResults = document.querySelector(".displayResults")
+          var displayResults = document.querySelector("#displayResults")
           var animalsArray = data.animals
                 for (let index = 0; index < animalsArray.length; index++) {
                      if(animalsArray[index].photos[0]){
@@ -45,49 +45,9 @@ function getAnimal(animalType, location) {
                       <h4>${animalsArray[index].contact.email}</h4>
                       <img src="${ animalsArray[index].photos[0].medium}">             
                       
-                      `
-                     }
-                    
-                }
-        });
-
     });
 }
 
 
 
-
-function getBreed(breeds) {
-  $.ajax({
-    method: "POST",
-    url: "https://api.petfinder.com/v2/oauth2/token",
-    data: { grant_type: "client_credentials", client_id: "91r5U7c01YadVDHmYCPyaE8vMuFKg35qriDBIPa5s0NOFIxnaz", client_secret: "WbfUIeUyx15e8kSqqr74SUq6kDyayTFHtq3kBOgx" }
-  })
-    .done(function (msg) {
-      console.log(msg)
-
-
-      $.ajax({
-        method: "GET",
-        url: "https://api.petfinder.com/v2/types/dog/breeds",
-        headers: { Authorization: "Bearer " + msg.access_token }
-      })
-
-        .done(function (data) {
-          console.log(data.breeds)
-          var displayResults = document.querySelector(".displayResults")
-          var animalsArray = data.breeds
-                for (let index = 0; index < animalsArray.length; index++) {
-                     if(animalsArray[index]){
-                      displayResults.innerHTML+=`
-                      <h3>${animalsArray[index].name}</h3>          
-                      
-                      `
-                     }
-                    
-                }
-        });
-
-    });
-}
 
