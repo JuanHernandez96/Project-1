@@ -43,7 +43,8 @@ function getAnimal(animalType, location) {
                       <h2>${animalsArray[index].name} </h2>
                       <h4>${animalsArray[index].contact.email}</h4>
                       <img src="${ animalsArray[index].photos[0].medium}">             
-                      <a href=${animalsArray[index].photos[0].medium}><i class="fas fa-heart"></i></a>
+                      <a><i onclick="save_data()" id="heart" class="fas fa-heart"></i></a>
+                      
                       `
                      }
                     
