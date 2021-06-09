@@ -55,7 +55,7 @@ function getAnimal(animalType, location) {
         }
       }
     });
-  });
+  }):
 }
 
 // /*button for save fav*/
