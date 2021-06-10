@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
 
 
@@ -23,12 +24,13 @@
 <body>
 
     <nav>
-        <label class="logo"></label>
+        <label class="logo">Discover Companions</label>
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="#Dogs">Dogs</a></li>
-            <li><a href="#Cats">Cats</a></li>
-            <li><a href="#Favorite">Favorite</a></li>
+            <li><a href="#dogs">Dogs</a></li>
+            <li><a href="#cats">Cats</a></li>
+            <li><a href="#search">Cats</a></li>
+            <li><a href="#favorite">Favorite</a></li>
         </ul>
         <label id="icon">
             <div></div>
@@ -38,25 +40,45 @@
     </nav>
 
     <section id="search" class="hide">
-        <h1>What are you looking for</h1>
-        <form>
-            <select name="" id="animalType">
-                <option value="dog">dog</option>
-                <option value="cat">cat</option>
 
-            </select>
-
+        <div class="modal-bg"></div>
+        <div class="modal">
+            <h1>What are you looking for</h1>
             <form>
-                <label for="zipcode" class="code">Enter Zip Code</label>
-                <input type="text" id="zipcode">
+                <select name="" id="animalType">
+                    <option value="dog">dog</option>
+                    <option value="cat">cat</option>
+
+                    <label for="zipcode" class="code">Enter Zip Code</label>
+                    <input type="text" id="zipcode">
             </form>
-            <button id="enterbtn">Enter</button>
-    </section>
-    <section id="displayResults" class="hide">
-        <h1>These are your results :</h1>
-        <!-- <button class="favBtn">Favorite</button> -->
+            <button class="enterbtn">Enter</button>
+        </div>
+
+
+
+
+        <!-- <form>
+                <select name="" id="animalType">
+                    <option value="dog">dog</option>
+                    <option value="cat">cat</option>
+
+                    <label for="zipcode" class="code">Enter Zip Code</label>
+                    <input type="text" id="zipcode">
+            </form> -->
+
 
     </section>
+
+    <article class="results">
+        <!-- <div class="col-md-4 col-sm-6"> -->
+        <section id="displayResults" class="hide">
+            <p>These are your results :</p>
+            <!-- <button class="favBtn">Favorite</button> -->
+
+        </section>
+        <!-- </div> -->
+    </article>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
