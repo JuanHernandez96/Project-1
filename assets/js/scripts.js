@@ -70,14 +70,14 @@ function getAnimal(animalType, location) {
         console.log(animalsArray[index].id);
         displayResults.innerHTML += `
           <div  class= "col s6">
+                    <img src="${image}">
                       <h2>Name: ${animalsArray[index].name} </h2>
                       <h4>Gender: ${animalsArray[index].gender} </h4>
-                      <h4>Contact: ${animalsArray[index].contact.email}</h4>
-                      <img src="${image}">  
-                      <h4>Address:${animalsArray[index].contact.address.address1}</h4>
-                      <h4>City:${animalsArray[index].contact.address.city}</h4>
-                      <h4>Country:${animalsArray[index].contact.address.country}</h4>
-                      <h4>Zip Code:${animalsArray[index].contact.address.postcode}</h4>
+                      <h4>Contact: ${animalsArray[index].contact.email}</h4>  
+                      <h4>Address: ${animalsArray[index].contact.address.address1}</h4>
+                      <h4>City: ${animalsArray[index].contact.address.city}</h4>
+                      <h4>Country: ${animalsArray[index].contact.address.country}</h4>
+                      <h4>Zip Code: ${animalsArray[index].contact.address.postcode}</h4>
 
                       <a href= "./location.html?address=${animalsArray[index].contact.address.address1}&city=${animalsArray[index].contact.address.city}&zipcode=${animalsArray[index].contact.address.postcode}" >Get Directions</a>
                       <button data-id="${animalsArray[index].id}"><i onclick='save_data()' id="heart" class="fas fa-heart"></i></button>
