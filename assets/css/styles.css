@@ -5,9 +5,10 @@
   list-style: none;
 }
 nav {
-  height: 80px;
+  height: 100px;
   width: 100%;
   background: turquoise;
+  margin-bottom: 0%;
 }
 nav ul {
   float: right;
@@ -35,12 +36,12 @@ a:hover {
   transition: 0.5s;
 }
 
-div {
+/* div {
   width: 35px;
   height: 5px;
   background-color: white;
   margin: 6px 0;
-}
+} */
 
 .logo {
   font-size: xx-large;
@@ -116,46 +117,84 @@ img {
 
 .body {
   background-image: url("https://wallpaperaccess.com/full/266689.jpg");
-
   background-size: cover;
 }
 .opensection {
-  /*background: #000000b4;*/
   width: 100vw;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   height: 100vh;
 }
-#enterbtn {
+.enterbtn {
   border-radius: 20px;
-  padding: 10px;
-  width: 100px;
+  padding: 20px;
+  width: 200px;
   font-size: 10px;
+  color: white;
+  background-image: linear-gradient(rgb(111, 0, 255), rgb(0, 47, 255));
+  font-display: center;
+}
+
+.enterbtn:hover {
+  color: aqua;
+}
+
+.title {
+  padding-top: 400px;
+  color: blue;
+  font-size: 5rem;
+}
+/* .modal {
+  position: relative;
+  background-color: white;
+  height: 40%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+} */
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#search-btn {
+  border-radius: 10px;
+  /* padding: 10px; */
+  width: 150px;
+  /* height: 70px; */
+  font-size: 35px;
   color: white;
   background-image: linear-gradient(rgb(111, 0, 255), rgb(0, 47, 255));
 }
 
-#enterbtn:hover {
-  color: aqua;
-}
-.code {
-  font-size: xx-large;
-  color: aliceblue;
-}
-#animalType {
-  padding: 10px;
-  font-size: x-large;
-}
-
-h1 {
-  padding-top: 400px;
-  color: gainsboro;
-  font-weight: bold;
-}
 @media (min-width: 600px) {
-  .body,
-  .search-container {
+  .body {
     background-image: url("https://wallpaperaccess.com/full/266689.jpg");
     background-size: cover;
   }
@@ -168,20 +207,20 @@ h1 {
     font-size: 50px;
     height: 100vh;
   }
-  #enterbtn {
+  .enterbtn {
     border-radius: 10px;
-    padding: 10px;
-    width: 250px;
-    height: 70px;
+    /* padding: 10px; */
+    width: 150px;
+    /* height: 70px; */
     font-size: 35px;
     color: white;
     background-image: linear-gradient(rgb(111, 0, 255), rgb(0, 47, 255));
   }
-  h1 {
-    padding-top: 200px;
-    color: white;
+  /* h1 {
+    /* padding-top: 200px; */
+  /* color: blue;
     font-weight: bold;
-  }
+  } */
 }
 
 #search {
@@ -194,11 +233,6 @@ h1 {
 
 .results {
   background-color: whitesmoke;
-}
-
-.btn-primary,
-.zipcode {
-  font-size: larger;
 }
 
 .results p {
