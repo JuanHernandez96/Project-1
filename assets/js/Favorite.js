@@ -15,7 +15,8 @@ function displayFavorite() {
   console.log(id)
       $.ajax({
         method: "GET",
-        url: "https://api.petfinder.com/v2/animals/" + id,
+        url: "https://api.petfinder.com/v2/animals/" + id + "&callback=?",
+        dataType: "json",
         headers: { Authorization: "Bearer" + msg.access_token},
       }).done(function (data)  {
         console.log(data);
