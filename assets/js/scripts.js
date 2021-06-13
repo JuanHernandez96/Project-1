@@ -35,7 +35,7 @@ function getAnimal(animalType, location) {
   $.ajax({
     method: "POST",
     url: "https://api.petfinder.com/v2/oauth2/token",
-    data: { grant_type: "client_credentials", client_id: "91r5U7c01YadVDHmYCPyaE8vMuFKg35qriDBIPa5s0NOFIxnaz", client_secret: "WbfUIeUyx15e8kSqqr74SUq6kDyayTFHtq3kBOgx" }
+    data: { grant_type: "client_credentials", client_id: "6RXo2SqyWk7nP56KetTQFH6quBE36vEp00h4vZRBtcAWdC5gBP", client_secret: "b4Q9HAO2bVTwBs1k87rnFNZzVx14OULGO47xwDkA" }
   })
     .done(function (msg) {
       console.log(msg)
