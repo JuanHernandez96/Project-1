@@ -5,6 +5,7 @@ $(document).ready(function () {
   });
 });
 
+
 //for modal
 
 var searchbtn = document.querySelector("#search-btn");
@@ -38,13 +39,14 @@ function getAnimal(animalType, location) {
   })
     .done(function (msg) {
       console.log(msg)
+       localStorage.setItem("token", JSON.stringify(msg))
 
 
-      $.ajax({
-        method: "GET",
-        url: "https://api.petfinder.com/v2/animals?type=" + animalType   + "&location=" + location,
-        headers: { Authorization: "Bearer " + msg.access_token }
-      })
+      // $.ajax({
+      //   method: "GET",
+      //   url: "https://api.petfinder.com/v2/animals?type=" + animalType   + "&location=" + location,
+      //   headers: { Authorization: "Bearer " + msg.access_token }
+      // })
 
     $.ajax({
       method: "GET",

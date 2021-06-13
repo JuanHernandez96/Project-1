@@ -1,4 +1,5 @@
-
+var msg = JSON.parse(localStorage.getItem("token"))
+console.log(msg)
 
 
 function displayFavorite() {
