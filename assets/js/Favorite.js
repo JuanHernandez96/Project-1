@@ -16,8 +16,7 @@ function displayFavorite() {
       $.ajax({
         method: "GET",
         url: "https://api.petfinder.com/v2/animals/" + id,
-        headers: { Authorization: "Bearer" + msg.access_token,
-      "Access-Control-Allow-Origin": "https://juanhernandez96.github.io/Project-1/favorite.html"},
+        headers: { Authorization: "Bearer" + msg.access_token},
       }).done(function (data)  {
         console.log(data);
         var displayFavorite = document.querySelector("#displayFavorite");
