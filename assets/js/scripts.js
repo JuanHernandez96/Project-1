@@ -80,10 +80,24 @@ function getAnimal(animalType, location) {
                       <h4>Zip Code: ${animalsArray[index].contact.address.postcode}</h4>
 
                       <a href= "./location.html?address=${animalsArray[index].contact.address.address1}&city=${animalsArray[index].contact.address.city}&zipcode=${animalsArray[index].contact.address.postcode}" >Get Directions</a>
-                      <button data-id="${animalsArray[index].id}"><i onclick='save_data()' id="heart" class="fas fa-heart"></i></button>
+                      <button  onclick=save_data()><i data-id="${animalsArray[index].id}" class="fas fa-heart"></i></button>
                       </div>
                       `;
       }
     });
   });
+  
 }
+function save_data(){
+  var newFavorite = $(event.target).attr("data-id")
+  console.log(newFavorite)
+  // this needs to grab data-id value from line 47 animalsArray[index].id
+  var saveAnimal = JSON.parse(window.localStorage.getItem("animalArray")) || []
+  saveAnimal.push(newFavorite)
+  console.log(saveAnimal)
+  window.localStorage.setItem("animalArray", JSON.stringify(saveAnimal))
+}
+
+
+
+
