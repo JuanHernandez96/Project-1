@@ -34,6 +34,7 @@ nav ul a {
 
 h1 {
   margin: 0;
+  padding-bottom: 20px;
 }
 
 a.active,
@@ -82,7 +83,7 @@ img {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
-  height: 200vh;
+  height: 100vh;
 }
 
 .enterbtn {
@@ -272,7 +273,7 @@ label {
   .enterbtn {
     border-radius: 20px;
     height: 50px;
-    width: 230px;
+    width: 50px;
     font-size: 35px;
     color: white;
     background-color: turquoise;
