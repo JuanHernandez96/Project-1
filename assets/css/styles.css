@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
 }
+
 nav {
   height: 80px;
   width: 100%;
@@ -12,15 +13,18 @@ nav {
   position: sticky;
   top: 0;
 }
+
 nav ul {
   float: right;
   margin-right: 40px;
 }
+
 nav li {
   display: inline-block;
   margin: 0 8px;
   line-height: 80px;
 }
+
 nav ul a {
   font-size: 1.2rem;
   color: #fff;
@@ -29,13 +33,17 @@ nav ul a {
   cursor: pointer;
   font-weight: 500;
 }
+
 h1 {
   margin: 0;
+  padding-bottom: 20px;
 }
+
 a.active,
 a:hover {
   transition: 0.5s;
 }
+
 .logo {
   font-size: xx-large;
   color: white;
@@ -43,15 +51,18 @@ a:hover {
   padding-top: 10px;
   margin-left: 10px;
 }
+
 nav #icon {
   float: right;
   cursor: pointer;
   margin-top: 20px;
   display: none;
 }
+
 #enterbtn {
   height: 50px;
 }
+
 img {
   margin-left: 5px;
   height: 300px;
@@ -62,10 +73,12 @@ img {
   border: 4px solid turquoise;
   border-radius: 20px;
 }
+
 .body {
   background-image: url("https://wallpaperaccess.com/full/266689.jpg");
   background-size: cover;
 }
+
 .opensection {
   width: 100vw;
   text-align: center;
@@ -73,6 +86,7 @@ img {
   font-size: 20px;
   height: 100vh;
 }
+
 .enterbtn {
   border-radius: 20px;
   height: 50px;
@@ -82,34 +96,37 @@ img {
   background-color: turquoise;
   font-display: center;
 }
+
 .enterbtn:hover {
   color: aqua;
 }
+
 .title {
   padding-top: 300px;
   color:turquoise;
   font-size: 5rem;
   text-shadow: 1px 1px 15px black;
 }
+
 .modal h2 {
   font-size: 25px;
   text-align: center;
   font-weight: bold;
 }
+
 .modal .modal-content{
   padding-top: 7rem;
 }
+
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
   padding-bottom: .5rem;
 }
+
 .modal h4 {
   font-size: 20px;
 }
-h1 {
-  margin: 0;
-  padding-bottom: 20px;
-}
+
 .dropdown-content li>a, .dropdown-content li>span {
   font-size: 20px;
   color: #26A69A;
@@ -118,21 +135,26 @@ h1 {
   padding: 14px 16px;
   font-weight: bold;
 }
+
 .modal-footer a{
   font-size: 30px;
 }
+
 label {
   color: black;
   font-size: 20px;
 }
+
 .results p {
   font-size: 30px;
     font-weight: bold;
 }
+
 .bg-active {
   visibility: visible;
   opacity: 1;
 }
+
 #search-btn {
   border-radius: 15px;
    padding: 5px; 
@@ -145,13 +167,16 @@ label {
   margin-left: 24.3rem;
   margin-bottom: 5rem;
 }
+
 .select-wrapper {
   position: relative;
   padding-bottom: 10px;
 }
+
 .select-wrapper input.select-dropdown {
   font-size: 20px;
 }
+
 #search {
   width: 100vw;
   text-align: center;
@@ -159,25 +184,31 @@ label {
   font-size: 20px;
   height: 100vh;
 }
+
 .results {
   background-color: whitesmoke;
 }
+
 #displayResults {
   text-align: center;
 }
+
 @media (max-width: 1048px) {
   nav ul {
     margin-right: 20px;
   }
+
   nav a {
     font-size: 17px;
   }
 }
+
 @media (max-width: 909px) {
   nav #icon {
     display: block;
     margin-right: 40px;
   }
+
   nav ul {
     position: fixed;
     width: 100%;
@@ -188,22 +219,27 @@ label {
     text-align: center;
     transition: all 0.5s;
   }
+
   nav li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
+
   nav a {
     font-size: 20px;
   }
+
   a.active,
   a:hover {
     border: none;
     color: #3498DB;
   }
+
   nav ul.show {
     left: 0;
   }
+
   .logo {
     font-size: x-large;
     color: white;
@@ -211,8 +247,9 @@ label {
     margin-top: 15px;
     margin-left: 10px;
   }
+
   .opensection {
-    /*background: #000000b4;*/
+    
     width: 100vw;
     text-align: center;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -221,13 +258,15 @@ label {
     height: 100vh;
   }
 }
+
 @media (max-width: 600px) {
   .body {
     background-image: url("https://wallpaperaccess.com/full/266689.jpg");
     background-size: cover;
   }
+
   .opensection {
-    /*background: #000000b4;*/
+    
     width: 100vw;
     text-align: center;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -235,6 +274,7 @@ label {
     font-size: 50px;
     height: 100vh;
   }
+  
   .enterbtn {
     border-radius: 20px;
     height: 50px;
