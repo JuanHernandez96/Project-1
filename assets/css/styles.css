@@ -35,6 +35,7 @@ nav ul a {
 h1 {
   margin: 0;
 }
+
 a.active,
 a:hover {
   transition: 0.5s;
@@ -55,9 +56,11 @@ nav #icon {
 
   display: none;
 }
+
 #enterbtn {
   height: 50px;
 }
+
 img {
   margin-left: 5px;
   height: 300px;
@@ -69,13 +72,11 @@ img {
   border-radius: 20px;
 }
 
-
-
-
 .body {
   background-image: url("https://wallpaperaccess.com/full/266689.jpg");
   background-size: cover;
 }
+
 .opensection {
   width: 100vw;
   text-align: center;
@@ -83,6 +84,7 @@ img {
   font-size: 20px;
   height: 200vh;
 }
+
 .enterbtn {
   border-radius: 20px;
   height: 50px;
@@ -113,13 +115,16 @@ img {
 .modal .modal-content{
   padding-top: 7rem;
 }
+
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
   padding-bottom: .5rem;
 }
+
 .modal h4 {
   font-size: 20px;
 }
+
 .dropdown-content li>a, .dropdown-content li>span {
   font-size: 20px;
   color: #26a69a;
@@ -132,11 +137,13 @@ img {
 .modal-footer a{
   font-size: 30px;
 }
+
 label {
   
   color: black;
   font-size: 20px;
 }
+
 .results p {
   font-size: 30px;
     font-weight: bold;
@@ -149,9 +156,9 @@ label {
 
 #search-btn {
   border-radius: 15px;
-   padding: 5px; 
+  padding: 5px; 
   width: 100px;
-   height: 40px; 
+  height: 40px; 
   font-size: 25px;
   color: white;
   background-color: turquoise;
@@ -159,10 +166,12 @@ label {
   margin-left: 24.3rem;
   margin-bottom: 5rem;
 }
+
 .select-wrapper {
   position: relative;
   padding-bottom: 10px;
 }
+
 .select-wrapper input.select-dropdown {
   font-size: 20px;
 }
@@ -179,13 +188,9 @@ label {
   background-color: whitesmoke;
 }
 
-
-
 #displayResults {
   text-align: center;
-  
 }
-
 
 @media (max-width: 1048px) {
   nav ul {
@@ -195,6 +200,7 @@ label {
     font-size: 17px;
   }
 }
+
 @media (max-width: 909px) {
   nav #icon {
     display: block;
@@ -215,17 +221,21 @@ label {
     margin: 50px 0;
     line-height: 30px;
   }
+  
   nav a {
     font-size: 20px;
   }
+
   a.active,
   a:hover {
     border: none;
     color: #3498db;
   }
+
   nav ul.show {
     left: 0;
   }
+
   .logo {
     font-size: x-large;
     color: white;
@@ -233,8 +243,8 @@ label {
     margin-top: 15px;
     margin-left: 10px;
   }
+
   .opensection {
-    /*background: #000000b4;*/
     width: 100vw;
     text-align: center;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -249,8 +259,8 @@ label {
     background-image: url("https://wallpaperaccess.com/full/266689.jpg");
     background-size: cover;
   }
+
   .opensection {
-    /*background: #000000b4;*/
     width: 100vw;
     text-align: center;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -258,6 +268,7 @@ label {
     font-size: 50px;
     height: 100vh;
   }
+
   .enterbtn {
     border-radius: 20px;
     height: 50px;
