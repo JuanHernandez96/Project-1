@@ -1,9 +1,15 @@
 * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
+  box-sizing: border-box;
 }
+
+/* Variables */
+:root {
+  --clr-light-: white;
+  --clr--dark: #204582;
+  --clr--medium: turquoise;
+  --clr--darker: black;
+}
+
 nav {
   height: 80px;
   width: 100%;

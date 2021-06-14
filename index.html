@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <title>Discover Companions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1378a15582d14dec0feaf55f146c5cc0b2389e2f
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -12,6 +16,29 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+    <section id="hero">
+        <div class="container">
+            <nav>
+                <h1>Discover Companios</h1>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="#dogs">Dogs</a></li>
+                    <li><a href="#cats">Cats</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#favorite">Favorite</a></li>
+                </ul>
+        </div>
+        </nav>
+        <!-- <label id="icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label> -->
+
+
+        <!---Opening Section-->
+=======
     <nav id="icon">
         <label class="logo">Discover Companions</label>
         <ul>
@@ -29,10 +56,13 @@
     </nav>
     <!---Opening Section-->
     <header class="body">
+>>>>>>> 1378a15582d14dec0feaf55f146c5cc0b2389e2f
         <section class="opensection">
-            <h1 class="title">Discover Companions!</h1>
-            <button data-target="modal1" class="enterbtn btn modal-trigger">Start</button>
+            <p>Discover Companions!</p>
+            <button id="show-modal">Start</button>
         </section>
+<<<<<<< HEAD
+=======
     </header>
 
     <!-- Modal Structure -->
@@ -46,15 +76,59 @@
                             <option value="" disabled selected>Choose your option</option>
                             <option value="Dog">Dog</option>
                             <option value="Cat">Cat</option>
+>>>>>>> 1378a15582d14dec0feaf55f146c5cc0b2389e2f
 
-                        </select>
-                    </div>
-                    <div class="col s8">
-                        <label for="zipcode" class="code">Enter Zip Code</label>
-                        <input type="text" id="zipcode">
-
-                    </div>
+        <!-- Modal Structure -->
+        <div class="overlay overlay--hidden"></div>
+        <div class="modal modal--hidden">
+            <div class="modal__contents">
+                <div class="modal__close-bar">
+                    <span>X</span>
                 </div>
+<<<<<<< HEAD
+                <h1>What are you looking for</h1>
+                <form>
+                    <div class="col">
+                        <div class="col s4">
+                            <select id='animalType'>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="Dog">Dog</option>
+                                <option value="Cat">Cat</option>
+
+                            </select>
+                        </div>
+                        <div class="col s8">
+                            <label for="zipcode" class="code">Enter Zip Code</label>
+                            <input type="text" id="zipcode">
+
+                        </div>
+                    </div>
+
+
+                    <button id="search-btn">Enter</button>
+                </form>
+
+                <!--Results-->
+                <article class="results">
+
+                    <section id="displayResults" class="row">
+                        <p>These are your results :</p>
+
+
+                    </section>
+
+                </article>
+
+                <!--  -->
+
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+                    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                    crossorigin=""></script>
+=======
         </div>
         </form>
         <button id="search-btn">Enter</button>
@@ -78,23 +152,24 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
+>>>>>>> 1378a15582d14dec0feaf55f146c5cc0b2389e2f
 
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
-        async></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
+                    async></script>
+                <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="./assets/js/scripts.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.modal').modal();
-        });
-        $(document).ready(function () {
-            $('select').formSelect();
-        });
+                <script src="./assets/js/scripts.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $('.modal').modal();
+                    });
+                    $(document).ready(function () {
+                        $('select').formSelect();
+                    });
 
-    </script>
+                </script>
 </body>
 
 </html>
