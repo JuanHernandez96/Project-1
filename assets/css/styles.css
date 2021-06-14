@@ -70,53 +70,7 @@ img {
 }
 
 
-@media (max-width: 1048px) {
-  nav ul {
-    margin-right: 20px;
-  }
-  nav a {
-    font-size: 17px;
-  }
-}
-@media (max-width: 909px) {
-  nav #icon {
-    display: block;
-    margin-right: 40px;
-  }
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #2f3640;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav a {
-    font-size: 20px;
-  }
-  a.active,
-  a:hover {
-    border: none;
-    color: #3498db;
-  }
-  nav ul.show {
-    left: 0;
-  }
-  .logo {
-    font-size: x-large;
-    color: white;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-left: 10px;
-  }
-}
+
 
 .body {
   background-image: url("https://wallpaperaccess.com/full/266689.jpg");
@@ -133,7 +87,7 @@ img {
   border-radius: 20px;
   height: 50px;
   width: 230px;
-  font-size: 5px;
+  font-size: 35px;
   color: white;
   background-color: turquoise;
   font-display: center;
@@ -212,29 +166,6 @@ label {
 .select-wrapper input.select-dropdown {
   font-size: 20px;
 }
-@media (min-width: 600px) {
-  .body {
-    background-image: url("https://wallpaperaccess.com/full/266689.jpg");
-    background-size: cover;
-  }
-  .opensection {
-    
-    width: 100vw;
-    text-align: center;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 50px;
-    height: 100vh;
-  }
-  .enterbtn {
-    border-radius: 10px;
-    width: 150px;
-     font-size: 35px;
-    color: white;
-    
-  }
- 
-}
 
 #search {
   width: 100vw;
@@ -253,4 +184,87 @@ label {
 #displayResults {
   text-align: center;
   
+}
+
+
+@media (max-width: 1048px) {
+  nav ul {
+    margin-right: 20px;
+  }
+  nav a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 909px) {
+  nav #icon {
+    display: block;
+    margin-right: 40px;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2f3640;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  a.active,
+  a:hover {
+    border: none;
+    color: #3498db;
+  }
+  nav ul.show {
+    left: 0;
+  }
+  .logo {
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .opensection {
+    /*background: #000000b4;*/
+    width: 100vw;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 50px;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .body {
+    background-image: url("https://wallpaperaccess.com/full/266689.jpg");
+    background-size: cover;
+  }
+  .opensection {
+    /*background: #000000b4;*/
+    width: 100vw;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 50px;
+    height: 100vh;
+  }
+  .enterbtn {
+    border-radius: 20px;
+    height: 50px;
+    width: 230px;
+    font-size: 35px;
+    color: white;
+    background-color: turquoise;
+  }
+ 
 }
