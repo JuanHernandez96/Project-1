@@ -1,4 +1,5 @@
 //for the menu icon//
+
 $(document).ready(function () {
   $("#icon").click(function () {
     $("ul").toggleClass("show");
@@ -10,17 +11,7 @@ $(document).ready(function () {
 var searchbtn = document.querySelector("#search-btn");
 
 var enterbtn = document.querySelector("enterbtn");
-// var modalBg = document.querySelector(".modal-bg");
 
-// var modalClose = document.querySelector(".modal-close");
-
-// searchbtn.addEventListener("click", function () {
-//   modalBg.classList.add("bg-active");
-// });
-
-// modalClose.addEventListener("click", function () {
-//   modalBg.classList.remove("big-active");
-// });
 
 searchbtn.addEventListener("click", function (event) {
   event.preventDefault();
