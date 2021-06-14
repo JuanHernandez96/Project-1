@@ -1,27 +1,19 @@
 //for the menu icon//
-
 $(document).ready(function () {
   $("#icon").click(function () {
     $("ul").toggleClass("show");
   });
 });
-
-
 //for modal
-
 var searchbtn = document.querySelector("#search-btn");
-
 var enterbtn = document.querySelector("enterbtn");
-
 
 searchbtn.addEventListener("click", function (event) {
   event.preventDefault();
-
   var zip = document.querySelector("#zipcode");
   var animalType = document.querySelector("#animalType");
   getAnimal(animalType.value, zip.value);
 });
-
 function getAnimal(animalType, location) {
   $.ajax({
     method: "POST",
@@ -31,14 +23,7 @@ function getAnimal(animalType, location) {
     .done(function (msg) {
       console.log(msg)
        localStorage.setItem("token", JSON.stringify(msg))
-
-
-      // $.ajax({
-      //   method: "GET",
-      //   url: "https://api.petfinder.com/v2/animals?type=" + animalType   + "&location=" + location,
-      //   headers: { Authorization: "Bearer " + msg.access_token }
-      // })
-
+     
     $.ajax({
       method: "GET",
       url:
@@ -71,7 +56,6 @@ function getAnimal(animalType, location) {
                       <h4>City: ${animalsArray[index].contact.address.city}</h4>
                       <h4>Country: ${animalsArray[index].contact.address.country}</h4>
                       <h4>Zip Code: ${animalsArray[index].contact.address.postcode}</h4>
-
                       <a href= "./location.html?address=${animalsArray[index].contact.address.address1}&city=${animalsArray[index].contact.address.city}&zipcode=${animalsArray[index].contact.address.postcode}" >Get Directions</a>
                       <button  onclick=save_data()><i data-id="${animalsArray[index].id}" class="fas fa-heart"></i></button>
                       </div>
@@ -79,7 +63,6 @@ function getAnimal(animalType, location) {
       }
     });
   });
-  
 }
 function save_data(){
   var newFavorite = $(event.target).attr("data-id")
@@ -90,7 +73,3 @@ function save_data(){
   console.log(saveAnimal)
   window.localStorage.setItem("animalArray", JSON.stringify(saveAnimal))
 }
-
-
-
-
